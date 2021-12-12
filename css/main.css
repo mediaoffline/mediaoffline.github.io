@@ -1,0 +1,151 @@
+/* whats a css? */
+
+/* scrollbar hiding */
+::-webkit-scrollbar {display: none;}
+
+body {
+    color: #eee;
+    background-color: #121212;
+    font-family: 'Geo', sans-serif;
+    font-size: medium;
+  }
+  
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  line-height: 90px;
+  text-align: center;
+}
+
+p {
+  line-height: 2%;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+
+#output{
+  font-size: 5vw;
+}
+
+/* centering thing */
+#fullcentered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* thx https://css-tricks.com/quick-css-trick-how-to-center-an-object-exactly-in-the-center/  :D */
+  transform: translate(-50%, -50%);
+
+}
+
+
+#horizontalcentered {
+  margin: auto;
+  width: 55%;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+#outer {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+#inner_fixed {
+  z-index: 1;
+  height: 50%;
+  background-color: #AAAAAA00;
+}
+
+#inner_remaining {
+  background-color: #DDDDDD00;
+  flex-grow : 1;
+}
+
+#backgroundImg {
+  z-index: 10;
+  background-image: url("images/offline_pixel_x2.png");
+  background-size: cover;
+  max-width: 100%;
+  height: auto;
+}
+
+.img .test {
+  max-width: 500%;
+  height: auto;
+}
+
+
+/* some fade stuff */
+
+.fade-in {
+  animation: fadeIn ease 1.5s;
+  -webkit-animation: fadeIn ease 1.5s;
+  -moz-animation: fadeIn ease 1.5s;
+  -o-animation: fadeIn ease 1.5s;
+  -ms-animation: fadeIn ease 1.5s;
+}
+
+  @keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+  @-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+#simpleflex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.text {
+  font-size: 1.5em;
+}
